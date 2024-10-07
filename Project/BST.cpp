@@ -76,6 +76,9 @@ class BST {
             unsigned int leaves() {
                 return leaves(root);
             }
+            unsigned int size_BST() {
+                return size;
+            }  
         private:
             void insert(K key, V value, Node* n) {
                 if (key < n->getKey()) {
@@ -191,6 +194,7 @@ int main () {
     // bst.printInOrder(); //imprimir el arbol en orden
     cout << "Height: " << bst.height() << endl; //imprimir la altura del arbol
     cout << "Leaves: " << bst.leaves() << endl; //imprimir las hojas del arbol
+    cout << "Size: " << bst.size_BST() << endl; //imprimir el tamaño del arbol
     bst.generateDot("movies.dot"); //generar el archivo .dot
     if (bst.validateDotFile("movies.dot")) {
         cout << "El archivo .dot es valido." << endl;
