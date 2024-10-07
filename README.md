@@ -6,3 +6,5 @@ How It Works:
 2. DOT File Creation: The tree is traversed, and its relationships are written to a DOT file for visualization.
 3. Graph Rendering: The DOT file can be used with Graphviz to produce a visual graph that displays the structure of the random BST.
 4. Tree Analysis: Each generated BST can be analyzed based on key structural properties like height, node depth, and balance, making it useful for studying tree behavior in different scenarios.
+
+Graphviz:https://graphviz.org/
